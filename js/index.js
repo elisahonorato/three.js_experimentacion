@@ -71,7 +71,7 @@ function animate(){
 
 
 let loader = new STLLoader();
-loader.load('/3dmodels/dioramafinale.stl', (model)=>{
+loader.load('./3dmodels/dioramafinale.stl', (model)=>{
     object = new THREE.Mesh(
         model,
         new THREE.MeshLambertMaterial({color: 0xFFF0CA})
