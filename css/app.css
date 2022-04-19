@@ -1,0 +1,12 @@
+body{
+    margin:0;
+    padding: 0cm;
+    overflow:hidden;
+    position: absolute;
+}
+h1 {
+    position:absolute;
+    text-align: center;
+    color: aquamarine;
+}
+
