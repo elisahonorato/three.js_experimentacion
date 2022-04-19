@@ -6,8 +6,12 @@
   "scripts": {
     "start": "nodemon app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elisahonorato/three.js_experimentacion"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Elisa Honorato",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
