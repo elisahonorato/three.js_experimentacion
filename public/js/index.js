@@ -55,17 +55,11 @@ for (let i=0; i<6; i++) {
     scene.add(lights[i]);
 
 };
-
-
     animate();
 }
 
 function animate(){
     requestAnimationFrame(animate);
-
- 
-  
-
     renderer.render(scene, camera);
 }
 
@@ -86,7 +80,8 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
     renderer.setSize(window.innerWidth, window.innerHeight)
+    renderer.render()
 }
-render()
+
 
 
