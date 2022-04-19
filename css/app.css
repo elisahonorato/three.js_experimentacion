@@ -1,19 +1,28 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik:wght@400;500&display=swap');
 body{
     margin:0;
     padding: 0cm;
     overflow:hidden;
     position: absolute;
-    background-color: #172D66
-
+    background-color: #172D66;
 }
 h1 {
-    position:absolute;
-    text-align: center;
-    color: rgb(247, 247, 247);
-}
-h6 {
     position:relative;
     text-align: center;
+    justify-content: center;
     color: rgb(247, 247, 247);
+    margin: 1%, 0%;
+    background-color: #172D66;
+    font-family: Inconsolata;
+}
+h4 {
+    position:relative;
+    text-align: center;
+    justify-content: center;
+    color: rgb(247, 247, 247);
+    margin: 1%, 0%;
+    background-color: #172D66;
+    font-family: Inconsolata;
 }
 
