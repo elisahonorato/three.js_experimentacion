@@ -3,10 +3,11 @@ body{
     padding: 0cm;
     overflow:hidden;
     position: absolute;
+    color: rgb(247, 247, 247);
 }
 h1 {
     position:absolute;
     text-align: center;
-    color: aquamarine;
+    color: rgb(247, 247, 247);
 }
 
