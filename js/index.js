@@ -15,7 +15,7 @@ function init(){
         75,
         window.innerWidth/ window.innerHeight,
         0.1,
-        10000
+        1000
     );
     camera.position.z = 10;
 
