@@ -21,12 +21,13 @@ function init(){
     let control = new OrbitControls(camera, renderer.domElement);
 const lights = []; 
 const lightValues = [
-    {colour: 0xD7FFC1, intensity: 8, dist: 12, x: 1, y: 0, z: 8},
-    {colour: 0xFF7A6C, intensity: 6, dist: 12, x: -2, y: 1, z: -10},
+    //naranjo, rojo, celeste, margenta, amarillo, verde
+    {colour: 0xFFA757, intensity: 3, dist: 12, x: 1, y: 0, z: 8},
+    {colour: 0xFF7A6C, intensity: 3, dist: 12, x: -2, y: 1, z: -10},
     {colour: 0x00FFFF, intensity: 3, dist: 10, x: 0, y: 10, z: 1},
-    {colour: 0xB30C58, intensity: 6, dist: 12, x: 0, y: -10, z: -1},
-    {colour: 0x16A7F5, intensity: 6, dist: 12, x: 10, y: 3, z: -1},
-    {colour: 0x90F615, intensity: 6, dist: 12, x: -10, y: -1, z: 0}
+    {colour: 0xB30C58, intensity: 3, dist: 12, x: 0, y: -10, z: -1},
+    {colour: 0xFFF200, intensity: 3, dist: 12, x: 10, y: 3, z: -1},
+    {colour: 0x90F615, intensity: 3, dist: 12, x: -10, y: -1, z: 0}
 ];
 for (let i=0; i<6; i++) {
 
@@ -51,14 +52,14 @@ function animate(){
     renderer.render(scene, camera);
 }
 let loader = new STLLoader();
-loader.load('./3dmodels/dioramafinale.stl', (model)=>{
+loader.load('./3dmodels/Kelp_test01.stl', (model)=>{
     object = new THREE.Mesh(
         model,
         new THREE.MeshLambertMaterial({color: 0xFFF0CA})
     );
-    object.scale.set(0.1, 0.1, 0.1);
-    object.position.set(-10,-10,0);
-    object.rotation.x = Math.PI/-3.6;
+    object.scale.set(0.06, 0.06, 0.06);
+    object.position.set(0,0,0);
+    object.rotation.x = Math.PI/1.5;
     init();
 })
 window.addEventListener('resize', onWindowResize, false)
