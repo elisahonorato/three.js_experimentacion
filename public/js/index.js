@@ -22,7 +22,7 @@ function init(){
 const lights = []; 
 const lightValues = [
     //naranjo, rojo, celeste, margenta, amarillo, verde
-    {colour: 0xFFA757, intensity: 3, dist: 12, x: 1, y: 0, z: 8},
+    {colour: 0xFC5E83, intensity: 3, dist: 12, x: 1, y: 0, z: 8},
     {colour: 0xFF7A6C, intensity: 3, dist: 12, x: -2, y: 1, z: -10},
     {colour: 0x00FFFF, intensity: 3, dist: 10, x: 0, y: 10, z: 1},
     {colour: 0xB30C58, intensity: 3, dist: 12, x: 0, y: -10, z: -1},
