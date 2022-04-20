@@ -3,33 +3,23 @@ import{STLLoader} from './threejs/STLLoader.js';
 import{OrbitControls} from './threejs/OrbitControls.js';
 
 let scene, camera, renderer, object;
-
-
-
 function init(){
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x172D66);
-
-
     camera = new THREE.PerspectiveCamera(
         75,
         window.innerWidth/ window.innerHeight,
-        0.01,
-        1000
+        0.1,
+        10000
     );
     camera.position.z = 10;
 
     renderer = new THREE.WebGL1Renderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
-
     scene.add(object);
-
     let control = new OrbitControls(camera, renderer.domElement);
-
-
 const lights = []; 
-
 const lightValues = [
     {colour: 0xD7FFC1, intensity: 8, dist: 12, x: 1, y: 0, z: 8},
     {colour: 0xFF7A6C, intensity: 6, dist: 12, x: -2, y: 1, z: -10},
@@ -51,19 +41,15 @@ for (let i=0; i<6; i++) {
       lightValues[i]['y'], 
       lightValues[i]['z']
     );
-  
     scene.add(lights[i]);
-
 };
     animate();
 }
-
 function animate(){
     requestAnimationFrame(animate);
+
     renderer.render(scene, camera);
 }
-
-
 let loader = new STLLoader();
 loader.load('./3dmodels/dioramafinale.stl', (model)=>{
     object = new THREE.Mesh(
